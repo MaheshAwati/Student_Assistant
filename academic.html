@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academic Status</title>
+
+
+</head>
+<style>
+	.container {
+	text-align: center;
+  position: relative;
+}
+.center {
+	 background-image: linear-gradient(to bottom, rgba(135,206,235,1), rgba(135,206,235,0));
+	outline: 7px solid black;
+	width: 520px;
+	height: 320px;
+	
+	 
+	text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+
+img { 
+  width: 100%;
+  height: auto;
+  opacity: 0.4;
+}
+</style>
+
+<body  >
+	<div class="container" >
+	<center>
+		<img src="Academic.jpg" height="1000" width="100">
+		<div class="center" align="center">
+		<h1>Academic Status</h1>
+		<form action="academicc.php" method="post">
+			<table align="center">
+				<tr>
+	 <td>PRN NO : </td><td>  <input type="text" name="prn_no" required="prn_no"></td>
+	</tr>
+	
+<tr>
+	<td>Attendence :</td>
+	<td><input type="text" name="attendence" required="attendence"></td>
+</tr>
+<tr>
+	<td>
+		Result:
+	</td>
+	<td>
+		<input type="text" name="result" required="result">
+	</td>
+</tr>
+
+<tr><td>     </td>
+	<td>
+<input type="submit" name="register" value="register"></td>
+</tr>
+		</form>
+
+	</center>
+</div>
+</div>
+	
+<table align="left">
+<td>
+
+	<td><form action="academic Login.html" >
+<input type="submit" name="logout" value="logout">
+</form></td>
+</table>
+</body>
+</html>

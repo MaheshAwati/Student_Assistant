@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+<script type="text/javascript">
+function validateForm() {
+  var x = document.forms["myForm"]["password"].value;
+  if (x != "administrator") {
+   	alert("enter correct password");
+
+    return false;
+  }
+  else  {
+  	alert("Login successful");
+  	return true;
+  }
+ 
+}
+</script>
+
+</head>
+<body bgcolor="brown">
+
+	<center>
+		<img src="main.png" height="350" width="1350">
+<h1>ADMIN LOGIN</h1>
+<form name="myForm" onsubmit="return validateForm()"  action="stregistration.html" method="post">
+<p>Username: <input type="text" name="username" value="Admin" readonly="readonly" ></p>
+<p>Password: <input type="password" name="password"></p>
+<p><input type="submit" value="Login"></p>
+</form>
+
+</center>
+<table>
+<td>
+<h2>Click here to go home page ==>  </h2></td>
+	<td><form action="COLLAGE ASSISTAN.html" >
+<input type="submit" name="Home" value="Home">
+</form></td>
+</table>
+</body>
+</html>
